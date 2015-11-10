@@ -1,0 +1,20 @@
+{
+  "name": "browserpath",
+  "version": "0.0.0",
+  "authors": [
+    "sashee <gsashee@gmail.com>"
+  ],
+  "description": "Path manipulation for the browser",
+  "main": "path.js",
+  "keywords": [
+    "path"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
