@@ -147,8 +147,12 @@
 	// path.relative(from, to)
 	// posix version
 	posix.relative = function(from, to) {
-		from = posix.resolve(from).substr(1);
-		to = posix.resolve(to).substr(1);
+		if (from.indexOf("/") === 0){
+			from = posix.resolve(from).substr(1);
+		}
+		if (to.indexOf("/") === 0){
+			to = posix.resolve(to).substr(1);
+		}
 
 		var fromParts = trimArray(from.split('/'));
 		var toParts = trimArray(to.split('/'));
